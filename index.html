@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untitled</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./page.css">
+    <script src="./slideapp.js" defer></script>
+    <script src="./appmove.js" defer></script>
+</head>
+<body>
+    <div id="page01_con" class="inner_con">
+
+    </div>
+
+    <div id="page02_con" class="inner_con">
+
+    </div>
+
+    <div id="page03_con" class="inner_con">
+
+    </div>
+
+    <div id="page04_con" class="inner_con">
+        <div class="profile_box">
+            <div class="account_banner">
+                <div class="banner_shadow"></div>
+                <img src="./img/banner_sample.webp" alt="배너이미지">
+            </div>
+            <div class="account_profile"></div>
+            <p class="user_name">000 님</p>
+        </div>
+
+
+
+
+
+        <ul class="account_menu">
+            <li><a href="javascript:void(0)">내 프로필 설정</a></li>
+            <li><a href="javascript:void(0)">내 인벤토리</a></li>
+            <li><a href="javascript:void(0)">내 즐겨찾기</a></li>
+            <li><a href="javascript:void(0)">어플리케이션 설정</a></li>
+            <li><a href="javascript:void(0)">피드백</a></li>
+            <li><a href="javascript:void(0)">법적고지</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0)">고객센터</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrap">
+        <div id="head"><p id="pagename">asasas</p><span class="material-icons" id="sub_open"> menu </span></div>
+        <div id="item_contain">
+            <div class="page01 page">
+            </div>
+            <div class="page02 page">
+            </div>
+            <div class="page03 page">
+            </div>
+            <div class="page04 page">
+            </div>
+        </div>
+        
+        <div id="sub_contain">
+            <div id="sub_bg"></div>
+            <div id="sub_wrap">
+                <div class="sub_head">
+                    <span class="material-icons" id="sub_close"> close </span>
+                </div>
+                <div class="search_bar">
+                    <div class="search_bg"></div>
+                    <div class="search_form">
+                        <input type="search" placeholder="검색어를 입력하세요.">
+                        <span class="material-icons"> search </span>
+                    </div>
+                </div>
+                <div class="content_contain">
+                    <div class="inner_item">
+                        <div></div>
+                        <p>메뉴1</p>
+                    </div>
+                    <div class="inner_item">
+                        <div></div>
+                        <p>메뉴2</p>
+                    </div>
+                    <div class="inner_item">
+                        <div></div>
+                        <p>메뉴3</p>
+                    </div>
+                    <div class="inner_item">
+                        <div></div>
+                        <p>메뉴4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="menu">
+        <div id="menu_wrap">
+            <div id="text_wrap">
+                <p id="m01"><span class="material-icons"> explore </span><br><span class="m_title">탐색</span></p>
+                <p id="m02"><span class="material-icons"> flight </span><br><span class="m_title">여행</span></p>
+                <p id="m03"><span class="material-icons"> map </span><br><span class="m_title">지도</span></p>
+                <p id="m04"><span class="material-icons"> account_circle </span><br><span class="m_title">내 정보</span></p>
+            </div>
+            <div id="select"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        const page01_con = document.getElementById('page01_con')
+        const page01 = document.querySelectorAll('.page01')[0]
+        const page02_con = document.getElementById('page02_con')
+        const page02 = document.querySelectorAll('.page02')[0]
+        const page03_con = document.getElementById('page03_con')
+        const page03 = document.querySelectorAll('.page03')[0]
+        const page04_con = document.getElementById('page04_con')
+        const page04 = document.querySelectorAll('.page04')[0]
+
+        page01.appendChild(page01_con)
+        page02.appendChild(page02_con)
+        page03.appendChild(page03_con)
+        page04.appendChild(page04_con)
+
+    </script>
+</body>
+</html>
