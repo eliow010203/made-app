@@ -113,7 +113,7 @@ pageEl.addEventListener('touchend',function(e5){
 
         numA = Math.abs((tscrpX/winXper)-50)
         numB = Math.abs((tscrpX/winXper)+50)
-        if((Math.abs(numA-numB))>=5){
+        if((Math.abs(numA-numB))>=20){
             if(numA>numB){
                 if(nValue==0){
                     sel(nValue)
