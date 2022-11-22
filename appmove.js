@@ -3,7 +3,7 @@ const travelwrap = document.querySelectorAll(`.page02`)[0]
 const travelbox = document.querySelectorAll(`.travel_box`)[0]
 const travel_line = document.getElementById('travel_line')
 const travelitemorigin = document.querySelectorAll(`.travel_item_box`)
-const travelitem = document.querySelectorAll(`.travel_item_box`)
+let travelitem = document.querySelectorAll(`.travel_item_box`)
 const removebtn = document.querySelectorAll(`.remove_button`)
 let tvalue = document.querySelectorAll(`.t_value`)
 let ttime = document.querySelectorAll(`.t_time`)
@@ -16,14 +16,14 @@ let itemlength = travelitem.length
 
 console.log((travelitem.length*120)+60)
 
-travelbox.style.height=`${(travelitem.length*120)+260}px`
+travelbox.style.height=`${(itemlength*120)+260}px`
 travelwrap.style.height=`${(travelitem.length*120)+450}px`
 
 console.log(document.getElementById('item_contain').style.left)
 
 if(document.getElementById('item_contain').style.left=='-100vw'){
     travel_line.style.height=`${(travelitem.length*120)+30}px`
-    wrap2.style.height=`${(travelitem.length*120)+450}px`
+    wrap2.style.height=`${(itemlength*120)+450}px`
     
 }else{
     
@@ -45,6 +45,9 @@ for(i=0;i<removebtn.length;i++){
         total_ttime = 0
         tvalue = document.querySelectorAll(`.t_value`)
         ttime = document.querySelectorAll(`.t_time`)
+        travelitem = document.querySelectorAll(`.travel_item_box`)
+
+        travelwrap.style.height=`${(travelitem.length*120)+450}px`
         
 
         for(i=0;i<tvalue.length;i++){
