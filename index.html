@@ -18,6 +18,87 @@
 
     <div id="page02_con" class="inner_con">
 
+        <!-- 총합상자 -->
+        <div class="travel_total_box">
+            <div class="travel_total_text_box">
+                <p class="schedule">일정 개수 | <span id="total_list"></span>개</p>
+                <p class="ttotal_time">총 소요시간 | <span id="total_time"></span>시간</p>
+                <p class="ttotal_value">총 소모비용 <br><span id="total_value"></span> 원</p>
+
+            </div>
+        </div>
+
+
+        <div class="travel_box">
+            <!-- 여행 일정 선 -->
+            <div id="travel_line">
+            </div>
+
+
+            <!-- 여행일정 상자 -->
+
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">조식</p>
+                    <p class="travel_value">가격 : <span class="t_value">21000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">1</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">유적지로 이동</p>
+                    <p class="travel_value">가격 : <span class="t_value">4000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">2</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">유적지 관광</p>
+                    <p class="travel_value">가격 : <span class="t_value">4000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">2.5</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+            
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">점심식사</p>
+                    <p class="travel_value">가격 : <span class="t_value">12000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">1</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">호텔로 복귀</p>
+                    <p class="travel_value">가격 : <span class="t_value">4000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">2</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">자유시간</p>
+                    <p class="travel_value">가격 : <span class="t_value">0</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">1.5</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+            <div class="travel_item_box">
+                <div class="travel_txt_box">
+                    <p class="travel_title">석식</p>
+                    <p class="travel_value">가격 : <span class="t_value">25000</span> 원</p>
+                    <p class="travel_time">소요 시간 : <span class="t_time">1.5</span>시간</p>
+                </div>
+                <div class="remove_button">삭제</div>
+            </div>
+
+
+        </div>
     </div>
 
     <div id="page03_con" class="inner_con">
@@ -28,7 +109,6 @@
         <div class="profile_box">
             <div class="account_banner">
                 <div class="banner_shadow"></div>
-                <img src="./img/banner_sample.webp" alt="배너이미지">
             </div>
             <div class="account_profile"></div>
             <p class="user_name">000 님</p>
@@ -116,7 +196,7 @@
         <div id="menu_wrap">
             <div id="text_wrap">
                 <p id="m01"><span class="material-icons"> explore </span><br><span class="m_title">탐색</span></p>
-                <p id="m02"><span class="material-icons"> flight </span><br><span class="m_title">여행</span></p>
+                <p id="m02"><span class="material-icons"> flight </span><br><span class="m_title">여행 일정</span></p>
                 <p id="m03"><span class="material-icons"> map </span><br><span class="m_title">지도</span></p>
                 <p id="m04"><span class="material-icons"> account_circle </span><br><span class="m_title">내 정보</span></p>
             </div>

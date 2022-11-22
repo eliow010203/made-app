@@ -2,7 +2,143 @@
 
 /* 탐색 */
 
-/* 여행 */
+/* 여행 일정 */
+
+
+.travel_total_box{
+  left: 2%;
+  top: 55px;
+  width: 96%;
+  height: 200px;
+  position: fixed;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);;
+  border-radius: 10px;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.travel_total_text_box{
+  /* background-color: #ccc; */
+  height: 160px;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 5px;
+}
+
+.schedule{
+  font-size: 18px;
+  background-color: #4ea0ff;
+  color: #fff;
+  padding: 7px 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-indent: 5px;
+  font-weight: bold;
+}
+.ttotal_time{
+  font-size: 18px;
+  background-color: #4ea0ff;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  text-indent: 5px;
+
+}
+.ttotal_value{
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #0075FF;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  
+  
+}
+
+#total_value{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.travel_box{
+  width: 95%;
+  height: 1000px;
+  margin: 0px auto;
+  position: relative;
+  /* background-color: aqua; */
+  top: 200px;
+}
+
+#travel_line{
+  position: absolute;
+  left: 15px;
+  top: -50px;
+  width: 10px;
+  height: 50px;
+  z-index: 2;
+  background-color: #0075FF;
+  transition: .3s;
+  /* box-shadow: inset 0px 0px 2px #002147; */
+}
+
+
+
+
+.travel_item_box{
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.travel_txt_box{
+  margin-left: 40px;
+  margin-top: 13px;
+  width: 60%;
+}
+.travel_title{
+  color: #333;
+  font-weight: bold;
+  font-size:25px;
+}
+.travel_value{
+  margin-top: 8px;
+  color: #999;
+  font-size: 15px;
+}
+.travel_time{
+  color: #999;
+  font-size: 15px;
+  
+}
+
+.remove_button{
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #004799;
+  color: #fff;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  /* transform: translate(12px, 0px); */
+}
+
 
 /* 지도 */
 
@@ -19,15 +155,8 @@
   position: absolute;
   height: 200px;
   width: 100%;
-  background-color: #333;
+  background-color: #0075FF;
   overflow: hidden;
-  z-index: 1;
-}
-
-.account_banner img{
-  width: 100%;
-  top: -75px;
-  position: absolute;
   z-index: 1;
 }
 
@@ -36,7 +165,7 @@
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
   z-index: 10;
 }
 
@@ -46,10 +175,10 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: #fff;
-  background-image: url(./img/user_sample.jpg);
+  background-color: #0075FF;
+  /* background-image: url(./img/user_sample.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   border-radius: 300px;
   border: 7px solid #fff;
   top: 125px;

@@ -39,7 +39,7 @@ body *{
     z-index: 10;
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: #0075FF;
     box-shadow: 0px 0px 10px #000;
 }
 
@@ -50,14 +50,14 @@ body *{
     height: 60px;
     line-height: 60px;
     font-size: 50px;
-    color: #111;
+    color: #fff;
     display: block;
     cursor: pointer;
     user-select: none;
 }
 
 #pagename{
-    color: #111;
+    color: #fff;
     font-weight: bold;
     font-size: 24px;
     line-height: 60px;
@@ -69,17 +69,17 @@ body *{
 }
 
 .page01{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     left: 0%;
     height: 4000px;
 }
 .page02{
     background-color: #fff;
     left: 100vw;
-    height: 3000px;
+    /* height: 3000px; */
 }
 .page03{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     left: 200vw;
     height: 2000px;
 }
@@ -235,11 +235,13 @@ body *{
 #menu_wrap p span{
     line-height: unset;
     font-size: 35px;
-    color: #111;
+    color: #004799;
     user-select: none;
+    width: 15vw;
 }
 
 .m_title{
+  margin: 0px auto;
   font-size: 14px !important;
   line-height: 10px !important;
   display: block;
@@ -256,7 +258,7 @@ body *{
     width: 20%;
     height: 5px;
     border-radius: 10px;
-    background-color: #111;
+    background-color: #004799;
     position: absolute;
     bottom: 12px;
     transition: .3s;
