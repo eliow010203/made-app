@@ -196,7 +196,7 @@ let itemheight = 0
 let page_scroll = new Array(4)
 page_scroll.fill(0)
 
-sel(1)
+sel(0)
 
 function sel(num) {
   scrpX = 100*num

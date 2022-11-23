@@ -71,7 +71,7 @@ body *{
 .page01{
     /* background-color: #ccc; */
     left: 0%;
-    height: 4000px;
+    height: 3200px;
 }
 .page02{
     background-color: #fff;
@@ -134,6 +134,7 @@ body *{
     position: relative;
     box-shadow: 0px 0px 10px #000;
     z-index: 10;
+    background-color: #0075FF;
 }
 
 .sub_head span{
@@ -144,6 +145,7 @@ body *{
     height: 60px;
     cursor: pointer;
     user-select: none;
+    color: #fff;
 }
 
 .search_bar{
@@ -212,6 +214,7 @@ body *{
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 6px 17px #00000070;
+    z-index: 10;
 }
 
 #menu_wrap{

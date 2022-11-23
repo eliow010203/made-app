@@ -10,19 +10,18 @@ let ttime = document.querySelectorAll(`.t_time`)
 
 const tlisttxt = document.getElementById('total_list')
 const tvaluetxt = document.getElementById('total_value')
-const ttimetxt = document.getElementById('total_time')
+const ttimetxth = document.getElementById('total_time_h')
+const ttimetxtm = document.getElementById('total_time_m')
 
 let itemlength = travelitem.length
 
-console.log((travelitem.length*120)+60)
 
 travelbox.style.height=`${(itemlength*120)+260}px`
 travelwrap.style.height=`${(travelitem.length*120)+450}px`
 
-console.log(document.getElementById('item_contain').style.left)
+travel_line.style.height=`${(travelitem.length*120)+30}px`
 
 if(document.getElementById('item_contain').style.left=='-100vw'){
-    travel_line.style.height=`${(travelitem.length*120)+30}px`
     wrap2.style.height=`${(itemlength*120)+450}px`
     
 }else{
@@ -53,14 +52,14 @@ for(i=0;i<removebtn.length;i++){
         for(i=0;i<tvalue.length;i++){
             total_tvalue = total_tvalue+Number(tvalue[i].innerText)
         }
-        console.log(total_tvalue)
         for(i=0;i<ttime.length;i++){
             total_ttime = total_ttime+Number(ttime[i].innerText)
         }
 
         tlisttxt.innerText = itemlength
         tvaluetxt.innerText = total_tvalue
-        ttimetxt.innerText = total_ttime
+        ttimetxth.innerText = Math.floor(total_ttime)
+        ttimetxtm.innerText = (((total_ttime-(Math.floor(total_ttime))).toFixed(2))*10)*6
     })
 }
 
@@ -72,13 +71,17 @@ for(i=0;i<ttime.length;i++){
     total_ttime = total_ttime+Number(ttime[i].innerText)
 }
 
+
 console.log(itemlength)
 console.log(total_tvalue)
-console.log(total_ttime)
+console.log(Math.floor(total_ttime))
+console.log((((total_ttime-(Math.floor(total_ttime))).toFixed(2))*10)*6)
+
 
 
 tlisttxt.innerText = itemlength
 tvaluetxt.innerText = total_tvalue
-ttimetxt.innerText = total_ttime
+ttimetxth.innerText = Math.floor(total_ttime)
+ttimetxtm.innerText = (((total_ttime-(Math.floor(total_ttime))).toFixed(2))*10)*6
 
 
