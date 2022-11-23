@@ -5,7 +5,7 @@ const m04 = document.getElementById('m04')
 const selectEl = document.getElementById('select')
 const pageEl = document.getElementById('item_contain')
 const pageNEl = document.getElementById('pagename')
-const pagename = ['탐색','여행 일정','지도','내 정보']
+const pagename = ['탐색','여행 일정','이벤트','내 정보']
 
 const sub_all = document.getElementById('sub_contain')
 const sub_bg = document.getElementById('sub_bg')
